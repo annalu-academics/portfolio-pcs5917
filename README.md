@@ -8,6 +8,14 @@
 **Instituição:** Universidade de São Paulo – Escola Politécnica  
 **Professor:** Victor Takashi Hayashi  
 
+## Aula 1
+
+A primeira imagem apresenta a postagem feita no fórum de um caso com notícia e referência acadêmica sobre IA adversarial. A segunda é uma resposta de uma postagem feita por outro colega.
+
+![Postagem de notícia e referência acadêmica sobre IA adversarial](./images/aula_1/post_forum.png)
+
+# O que é este Repositório?
+
 ## 1. Objetivo do Portfólio
 
 Este portfólio reúne as principais atividades, estudos, experimentos e reflexões desenvolvidos ao longo da disciplina **PCS5917 – IA Adversarial**.
