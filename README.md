@@ -22,13 +22,29 @@ Nesta aula a atividade foi de Red Teaming. Foram feitos testes de ataques do mod
 
 O notebook [] contém o exercício executado. A tabela abaixo mostra quais foram os prompts de ataque e as respectivas respostas do modelo.
 
+tabela []
+
 ## Aula 3: aplicação de IA em cibersegurança
 
+Na aula 3 tivemos uma dinâmica em aula, onde preenchemos este [miro](https://miro.com/app/board/uXjVEd7-RYI=/?share_link_id=500924556009). O nosso grupo pegou o seguinte caso na dinâmica: 
+> Cenários G1
+> Ambiente de Treinamento Remoto de Direção:
+> a) Identificação do Cidadão;
+> b) Verificação de Liveness ao longo da sessão;
+> c) Rastreabilidade da Interação.
 
+Com isso, preenchemos nosso quadro como mostra o print a seguir:
+![Miro aula 3](./images/aula_3/resposta_forum.png)
 
-## Aula 4: ataques adversariais contra sistemas de IA (parte 1)
+Além da dinâmica, tivemos a atividade de detecção de áudio falso. O notebook onde foi feita essa tarefa pode se encontrado aqui[].
 
-## Aula 5: ataques adversariais contra sistemas de IA (parte 2)
+## Aula 4: ataques adversariais contra sistemas de IA (parte 1) - Caixa transparente
+
+Na quarta aula, o exercício foi fazer testes de ataques caixa transparente usando nanoGCG. A tabela abaixo mostra quais foram os objetivos de ataque, os prefixos de ataque e as respectivas respostas do modelo, indicando também se o ataque funcionou ou não. O notebook com as execuções que geraram esta tabela é encontrado aqui[].
+
+tabela[]
+
+## Aula 5: ataques adversariais contra sistemas de IA (parte 2) - Caixa opaca
 
 # O que é este Repositório?
 
