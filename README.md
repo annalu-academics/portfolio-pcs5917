@@ -18,7 +18,13 @@ A primeira imagem apresenta a postagem feita no fórum de um caso com notícia e
 
 ## Aula 2: fundamentos de Inteligência Artificial e Segurança
 
+Nesta aula a atividade foi de Red Teaming. Foram feitos testes de ataques do modelo DeepSeek R1 de forma manual, inspirando-se nos ataques disponibilizados neste [dataset](https://github.com/yjw1029/Self-Reminder-Data/blob/master/data/jailbreak_prompts.csv). 
+
+O notebook [] contém o exercício executado. A tabela abaixo mostra quais foram os prompts de ataque e as respectivas respostas do modelo.
+
 ## Aula 3: aplicação de IA em cibersegurança
+
+
 
 ## Aula 4: ataques adversariais contra sistemas de IA (parte 1)
 
