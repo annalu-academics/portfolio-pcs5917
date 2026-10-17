@@ -22,7 +22,7 @@ Nesta aula a atividade foi de Red Teaming. Foram feitos testes de ataques do mod
 
 O notebook [] contém o exercício executado. A tabela abaixo mostra quais foram os prompts de ataque e as respectivas respostas do modelo.
 
-![Tabela ataques aula 2](./tabelas/Atividade Prática Aula 2 - Red Teaming.csv)
+![Tabela ataques aula 2](./tabelas/Atividade Prática Aula 2 - Red Teaming.html)
 
 ## Aula 3: aplicação de IA em cibersegurança
 
