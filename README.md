@@ -36,7 +36,7 @@ Na aula 3 tivemos uma dinâmica em aula, onde preenchemos este [miro](https://mi
 
 Com isso, preenchemos nosso quadro como mostra o print a seguir:
 
-![Miro aula 3](./images/aula_3/Miro - Aula 3.png)
+![Miro aula 3](./images/aula_3/miro_aula_3.png)
 
 Além da dinâmica, tivemos a atividade de detecção de áudio falso. O notebook onde foi feita essa tarefa pode se encontrado aqui[].
 
