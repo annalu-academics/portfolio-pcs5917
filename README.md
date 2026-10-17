@@ -8,11 +8,21 @@
 **Instituição:** Universidade de São Paulo – Escola Politécnica  
 **Professor:** Victor Takashi Hayashi  
 
-## Aula 1
+## Aula 1: notícias e referências científicas sobre IA Adversarial
 
 A primeira imagem apresenta a postagem feita no fórum de um caso com notícia e referência acadêmica sobre IA adversarial. A segunda é uma resposta de uma postagem feita por outro colega.
 
 ![Postagem de notícia e referência acadêmica sobre IA adversarial](./images/aula_1/post_forum.png)
+
+![Postagem de notícia e referência acadêmica sobre IA adversarial](./images/aula_1/resposta_forum.png)
+
+## Aula 2: fundamentos de Inteligência Artificial e Segurança
+
+## Aula 3: aplicação de IA em cibersegurança
+
+## Aula 4: ataques adversariais contra sistemas de IA (parte 1)
+
+## Aula 5: ataques adversariais contra sistemas de IA (parte 2)
 
 # O que é este Repositório?
 
