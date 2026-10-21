@@ -23,7 +23,7 @@ Nesta aula a atividade foi de Red Teaming. Foram feitos testes de ataques do mod
 O [notebook](https://github.com/annalu-academics/portfolio-pcs5917/blob/fb9954eefbcf371a1085c85dc02e2e9d3615451a/notebooks/Atividade_Pra%CC%81tica_Red_Teaming.ipynb) contém o exercício executado. A [tabela](https://github.com/annalu-academics/portfolio-pcs5917/blob/e476070a2fc864ad7efd80d51b745a836842126a/tabelas/Atividade%20Pra%CC%81tica%20Aula%202%20-%20Red%20Teaming.csv) mostra quais foram os prompts de ataque e as respectivas respostas do modelo.
 Na tabela, o número do ataque representa uma mesma estrutura de prompt que foi utilizada. Os números repetidos representam que uma mesma estrutura de prompt foi usada para teste em outra língua, ou para executar outra tarefa maliciosa.
 
-
+No geral, foi possível observar que é relativamente fácil ter um ataque bem-sucedido com prompts longos.
 
 ## Aula 3: aplicação de IA em cibersegurança
 
@@ -42,9 +42,13 @@ Além da dinâmica, tivemos a atividade de detecção de áudio falso. O noteboo
 
 ## Aula 4: ataques adversariais contra sistemas de IA (parte 1) - Caixa transparente
 
-Na quarta aula, o exercício foi fazer testes de ataques caixa transparente usando nanoGCG. Nesta [tabela](https://github.com/annalu-academics/portfolio-pcs5917/blob/0a9f1fab9560152930f96475a7d697e25544bfb5/tabelas/Resultados%20dos%20Prompts%20-%20Atividade%20Pra%CC%81tica%20Aula%204.csv) encontram-se os objetivos de ataque, os sufixos de ataque e as respectivas respostas do modelo, indicando também se o ataque funcionou ou não. O notebook com as execuções que geraram esta tabela é encontrado [aqui].
+Na quarta aula, o exercício foi fazer testes de ataques caixa transparente usando nanoGCG. Nesta [tabela](https://github.com/annalu-academics/portfolio-pcs5917/blob/0a9f1fab9560152930f96475a7d697e25544bfb5/tabelas/Resultados%20dos%20Prompts%20-%20Atividade%20Pra%CC%81tica%20Aula%204.csv) encontram-se os objetivos de ataque, os sufixos de ataque e as respectivas respostas do modelo, indicando também se o ataque funcionou ou não. O notebook com as execuções que geraram esta tabela é encontrado [aqui]. Da mesma forma que foram apresentados os resultados na tabela da atividade 2, a numeração do ataque indica um mesmo tipo de ataque, que neste caso há repetição para executar o mesmo teste em português e inglês. 
 
-Algo interessante é que, para os ataques testados, em inglês a taxa de sucesso foi maior que em português. Para algumas respostas, apesar da LLM ter respondido conforme era pretendido o começo da frase, ela alucinou.
+Algumas observações em relação aos resultados ao testar ataques utilizando nanoGCG: 
+- No geral, usar temperaturas maiores geraram resultados piores neste técnica. 
+- Algo interessante é que, para os ataques testados, em inglês a taxa de sucesso foi maior que em português.
+- Para algumas respostas, apesar da LLM ter respondido conforme era pretendido o começo da frase, ela alucinou.
+- Em algumas tarefas maliciosas, as táticas testadas na aula 2 foram mais efetivas, principalmente aquelas que utilizam prompts longos e que falam para a LLM fazer uma "brincadeira" ou um "cenário hipotético" (exemplo: pedir para a LLM ser grosseira e dar opiniões preconceituosas). 
 
 ## Aula 5: ataques adversariais contra sistemas de IA (parte 2) - Caixa opaca
 
