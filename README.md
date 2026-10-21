@@ -20,7 +20,7 @@ A primeira imagem apresenta a postagem feita no fórum de um caso com notícia e
 
 Nesta aula a atividade foi de Red Teaming. Foram feitos testes de ataques do modelo DeepSeek R1 de forma manual, inspirando-se nos ataques disponibilizados neste [dataset](https://github.com/yjw1029/Self-Reminder-Data/blob/master/data/jailbreak_prompts.csv). 
 
-O [notebook](https://github.com/annalu-academics/portfolio-pcs5917/blob/0a30d86e6781f195a67c53a9736d62a832744f91/notebooks/aula_02_atividade_pratica_red_teaming.ipynb) contém o exercício executado. A [tabela](https://github.com/annalu-academics/portfolio-pcs5917/blob/e476070a2fc864ad7efd80d51b745a836842126a/tabelas/Atividade%20Pra%CC%81tica%20Aula%202%20-%20Red%20Teaming.csv) mostra quais foram os prompts de ataque e as respectivas respostas do modelo.
+O [notebook](https://github.com/annalu-academics/portfolio-pcs5917/blob/0a30d86e6781f195a67c53a9736d62a832744f91/notebooks/aula_02_atividade_pratica_red_teaming.ipynb) contém o exercício executado. A [tabela](https://github.com/annalu-academics/portfolio-pcs5917/blob/762f2e6fe6e299a989ad90baf44a66a15d2f890d/tabelas/aula_02_resultados_prompts_red_teaming.csv) mostra quais foram os prompts de ataque e as respectivas respostas do modelo.
 Na tabela, o número do ataque representa uma mesma estrutura de prompt que foi utilizada. Os números repetidos representam que uma mesma estrutura de prompt foi usada para teste em outra língua, ou para executar outra tarefa maliciosa.
 
 No geral, foi possível observar que é relativamente fácil ter um ataque bem-sucedido com prompts longos.
