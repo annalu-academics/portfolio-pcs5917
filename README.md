@@ -44,7 +44,7 @@ Além da dinâmica, tivemos a atividade de detecção de áudio falso. O noteboo
 
 Na quarta aula, o exercício foi fazer testes de ataques caixa transparente usando nanoGCG. Nesta [tabela](https://github.com/annalu-academics/portfolio-pcs5917/blob/0a9f1fab9560152930f96475a7d697e25544bfb5/tabelas/Resultados%20dos%20Prompts%20-%20Atividade%20Pra%CC%81tica%20Aula%204.csv) encontram-se os objetivos de ataque, os sufixos de ataque e as respectivas respostas do modelo, indicando também se o ataque funcionou ou não. O notebook com as execuções que geraram esta tabela é encontrado [aqui]. Da mesma forma que foram apresentados os resultados na tabela da atividade 2, a numeração do ataque indica um mesmo tipo de ataque, que neste caso há repetição para executar o mesmo teste em português e inglês. 
 
-Algumas observações em relação aos resultados ao testar ataques utilizando nanoGCG: 
+Algumas observações em relação aos resultados dos ataques utilizando nanoGCG: 
 - No geral, usar temperaturas maiores geraram resultados piores neste técnica. 
 - Algo interessante é que, para os ataques testados, em inglês a taxa de sucesso foi maior que em português.
 - Para algumas respostas, apesar da LLM ter respondido conforme era pretendido o começo da frase, ela alucinou.
