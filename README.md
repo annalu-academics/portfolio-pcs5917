@@ -52,8 +52,12 @@ Com isso, preenchemos nosso quadro como mostra o print a seguir:
 ![Miro aula 3](./images/aula_3/miro_aula_3.png)
 
 Além da dinâmica, tivemos a atividade de detecção de áudio falso. 
-Primeiramente, foi feita uma tentativa de usar o dataset [Asvspoof 2024](https://www.kaggle.com/datasets/ulianazb/asvspoof-2024). Porém pelo colab não havia espaço suficiente para guardar o dataset. Também feoi feita uma tentativa pelo kaggle, porém o computador não suportou por grande uso da CPU do computador. O notebook da tentativa de baixar o dataset do ASVSpoof 2024 pode ser encontrado [aqui]().
-O notebook onde foi feita essa tarefa pode se encontrado aqui[].
+Primeiramente, foi feita uma tentativa de usar o dataset [Asvspoof 2024](https://www.kaggle.com/datasets/ulianazb/asvspoof-2024). Porém pelo colab não havia espaço suficiente para guardar o dataset. Também foi feita uma tentativa pelo kaggle, porém o computador não suportou por grande uso da CPU do computador. O notebook da tentativa de baixar o dataset do ASVSpoof 2024 pode ser encontrado [aqui](./notebooks/aula_03/aula_03_tentativa_kaggle_baixar_dataset_asvspoof_2024.ipynb).
+
+Assim, foi escolhido o mesmo dataset do [artigo](https://ieeexplore.ieee.org/document/9358099) que foi designada a leitura para a aula 3, o dataset [ASVSpoof 2019](https://www.kaggle.com/datasets/awsaf49/asvpoof-2019-dataset). Desta forma, foi feito um dataset, já separado entre treino teste e com um breve pré-processamento de truncamento do áudio para 5s/padding para áudios com duração menor que esse tempo. O notebook onde foi criado esse dataset pode ser encontrado [aqui](). Para simplificar a tarefa de detecção para a atividade, foi apenas selecionado o áudio falso do tipo logical access (LA), que após o balanceamento do dataset ficou com um total de 4128 exemplos para o treino e 1032 exemplos de áudio para o teste. 
+
+
+Com o dataset criado, seguiu-se para o desenvolvimento do modelo de detecção de áudio falso.
 
 ## Aula 4: ataques adversariais contra sistemas de IA (parte 1) - Caixa transparente
 
