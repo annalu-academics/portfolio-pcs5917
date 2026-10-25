@@ -23,7 +23,20 @@ Nesta aula a atividade foi de Red Teaming. Foram feitos testes de ataques do mod
 O [notebook](https://github.com/annalu-academics/portfolio-pcs5917/blob/0a30d86e6781f195a67c53a9736d62a832744f91/notebooks/aula_02_atividade_pratica_red_teaming.ipynb) contém o exercício executado. A [tabela](https://github.com/annalu-academics/portfolio-pcs5917/blob/762f2e6fe6e299a989ad90baf44a66a15d2f890d/tabelas/aula_02_resultados_prompts_red_teaming.csv) mostra quais foram os prompts de ataque e as respectivas respostas do modelo.
 Na tabela, o número do ataque representa uma mesma estrutura de prompt que foi utilizada. Os números repetidos representam que uma mesma estrutura de prompt foi usada para teste em outra língua, ou para executar outra tarefa maliciosa.
 
-No geral, foi possível observar que é relativamente fácil ter um ataque bem-sucedido com prompts longos.
+No geral, foi possível observar que é relativamente fácil ter um ataque bem-sucedido com prompts longos e alegando autoridade, interesses apenas acadêmicos, ou falando para incorporar uma nova personalidade.
+
+Um exemplo interessante de se destacar, foi o ataque simulando um "jogo" onde o modelo teria que responder com duas personalidades, como mostra a imagem abaixo:
+![Print 1 do notebook aula 2]()
+
+Em português, o ataque não foi bem-sucedido, como mostra a resposta abaixo:
+
+![Print 2 do notebook aula 2]()
+
+Porém, ao executar o mesmo ataque em inglês, o ataque obteve sucesso, como mostra a imagem a seguir:
+
+![Print 3 do notebook aula 2]()
+
+Além de ter sido extremamente agressivo e grosseira, ele deu instruções de como fazer um veneno. O resultado foi contra o que era esperado, de ataques em português serem mais bem-sucedidos que em inglês no geral. A hipótese para isso é que foi apenas um ataque isolado e não vários para obter uma porcentagem total de sucesso entre ataques em português e inglês.
 
 ## Aula 3: aplicação de IA em cibersegurança
 
