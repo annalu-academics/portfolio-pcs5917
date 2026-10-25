@@ -64,7 +64,7 @@ Algumas observações em relação aos resultados dos ataques utilizando nanoGCG
 - Em algumas tarefas maliciosas, as táticas testadas na aula 2 foram mais efetivas, principalmente aquelas que utilizam prompts longos e que falam para a LLM fazer uma "brincadeira" ou um "cenário hipotético" (exemplo: pedir para a LLM ser grosseira e dar opiniões preconceituosas).
 
 Sobre o último ponto levantado, é necessário ressaltar, porém, que os modelos testados são diferentes, na atividade da aula 2 o modelo testado foi o DeepSeek R1. Um estudo feito por Jaiswal et. al, de 2026 (DOI: https://doi.org/10.1145/3803628.3807972), comparou a segurança entre diversas LLMs e uma das avaliações foi a vulnerabilidade dos modelos à ataques sem nenhum tipo de defesa adicional. O resultado consolidado encontra-se na tabela a seguir:
-![Tabela artigo Jaiswal et. al 2026](tabela_vulnerabilidade_llms_jiswal_2026)
+![Tabela artigo Jaiswal et. al 2026](./images/aula_4/tabela_vulnerabilidade_llms_jiswal_2026.png)
 
 Em "vulnerable" encontra-se o resultado de em quantos prompts o modelo se mostrou vulnerável(sim/não), dentre todos os 91 testados e a coluna "Rate" é o mesmo resultado em porcentagem. Observa-se que para o caso que estamos testando nos notebooks das aulas 2 e 4, os modelos não têm defesas adicionais. Então, de acordo com esse estudo é esperado que o modelo DeepSeek R1 obtenha resultados significativamente piores que o Phi3 nestas circunstâncias. Desta forma, o que foi testado não é completamente comparável e é possível que tivéssemos resultados diferentes testando ambas abordagens de igualmente para ambos modelos.
 
