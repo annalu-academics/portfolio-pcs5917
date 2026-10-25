@@ -51,7 +51,9 @@ Com isso, preenchemos nosso quadro como mostra o print a seguir:
 
 ![Miro aula 3](./images/aula_3/miro_aula_3.png)
 
-Além da dinâmica, tivemos a atividade de detecção de áudio falso. O notebook onde foi feita essa tarefa pode se encontrado aqui[].
+Além da dinâmica, tivemos a atividade de detecção de áudio falso. 
+Primeiramente, foi feita uma tentativa de usar o dataset [Asvspoof 2024](https://www.kaggle.com/datasets/ulianazb/asvspoof-2024). Porém pelo colab não havia espaço suficiente para guardar o dataset. Também feoi feita uma tentativa pelo kaggle, porém o computador não suportou por grande uso da CPU do computador. O notebook da tentativa de baixar o dataset do ASVSpoof 2024 pode ser encontrado [aqui]().
+O notebook onde foi feita essa tarefa pode se encontrado aqui[].
 
 ## Aula 4: ataques adversariais contra sistemas de IA (parte 1) - Caixa transparente
 
