@@ -55,13 +55,18 @@ Além da dinâmica, tivemos a atividade de detecção de áudio falso. O noteboo
 
 ## Aula 4: ataques adversariais contra sistemas de IA (parte 1) - Caixa transparente
 
-Na quarta aula, o exercício foi fazer testes de ataques caixa transparente usando nanoGCG. Nesta [tabela](https://github.com/annalu-academics/portfolio-pcs5917/blob/e17cd7bc501688fa9aca7fe77d777d0e021d9132/tabelas/aula_04_resultados_prompts_nanoGCG.csv) encontram-se os objetivos de ataque, os sufixos de ataque e as respectivas respostas do modelo, indicando também se o ataque funcionou ou não. O notebook com as execuções que geraram esta tabela é encontrado [aqui](https://github.com/annalu-academics/portfolio-pcs5917/blob/a3d65a5b1c570b85fd5d90a72833e559a60bd311/notebooks/aula_04_atividade_pratica_nanoGCG.ipynb). Da mesma forma que foram apresentados os resultados na tabela da atividade 2, a numeração do ataque indica um mesmo tipo de ataque, que neste caso há repetição para executar o mesmo teste em português e inglês. 
+Na quarta aula, o exercício foi fazer testes de ataques caixa transparente usando nanoGCG. Nesta [tabela](https://github.com/annalu-academics/portfolio-pcs5917/blob/e17cd7bc501688fa9aca7fe77d777d0e021d9132/tabelas/aula_04_resultados_prompts_nanoGCG.csv) encontram-se os objetivos de ataque, os sufixos de ataque e as respectivas respostas do modelo, indicando também se o ataque funcionou ou não. O notebook com as execuções que geraram esta tabela é encontrado [aqui](https://github.com/annalu-academics/portfolio-pcs5917/blob/a3d65a5b1c570b85fd5d90a72833e559a60bd311/notebooks/aula_04_atividade_pratica_nanoGCG.ipynb). Da mesma forma que foram apresentados os resultados na tabela da atividade 2, a numeração do ataque indica um mesmo tipo de ataque, que neste caso há repetição para executar o mesmo teste em português e inglês. O modelo testado neste notebook foi o [Phi 3 mini 4k](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct).
 
 Algumas observações em relação aos resultados dos ataques utilizando nanoGCG: 
 - No geral, usar temperaturas maiores geraram resultados piores neste técnica. 
 - Algo interessante é que, para os ataques testados, em inglês a taxa de sucesso foi maior que em português.
 - Para algumas respostas, apesar da LLM ter respondido conforme era pretendido o começo da frase, ela alucinou.
-- Em algumas tarefas maliciosas, as táticas testadas na aula 2 foram mais efetivas, principalmente aquelas que utilizam prompts longos e que falam para a LLM fazer uma "brincadeira" ou um "cenário hipotético" (exemplo: pedir para a LLM ser grosseira e dar opiniões preconceituosas). 
+- Em algumas tarefas maliciosas, as táticas testadas na aula 2 foram mais efetivas, principalmente aquelas que utilizam prompts longos e que falam para a LLM fazer uma "brincadeira" ou um "cenário hipotético" (exemplo: pedir para a LLM ser grosseira e dar opiniões preconceituosas).
+
+Sobre o último ponto levantado, é necessário ressaltar, porém, que os modelos testados são diferentes, na atividade da aula 2 o modelo testado foi o DeepSeek R1. Um estudo feito por Jaiswal et. al, de 2026 (DOI: https://doi.org/10.1145/3803628.3807972), comparou a segurança entre diversas LLMs e uma das avaliações foi a vulnerabilidade dos modelos à ataques sem nenhum tipo de defesa adicional. O resultado consolidado encontra-se na tabela a seguir:
+![Tabela artigo Jaiswal et. al 2026](tabela_vulnerabilidade_llms_jiswal_2026)
+
+Em "vulnerable" encontra-se o resultado de em quantos prompts o modelo se mostrou vulnerável(sim/não), dentre todos os 91 testados e a coluna "Rate" é o mesmo resultado em porcentagem. Observa-se que para o caso que estamos testando nos notebooks das aulas 2 e 4, os modelos não têm defesas adicionais. Então, de acordo com esse estudo é esperado que o modelo DeepSeek R1 obtenha resultados significativamente piores que o Phi3 nestas circunstâncias. Desta forma, o que foi testado não é completamente comparável e é possível que tivéssemos resultados diferentes testando ambas abordagens de igualmente para ambos modelos.
 
 ## Aula 5: ataques adversariais contra sistemas de IA (parte 2) - Caixa opaca
 
