@@ -26,7 +26,7 @@ Na tabela, o número do ataque representa uma mesma estrutura de prompt que foi 
 No geral, foi possível observar que é relativamente fácil ter um ataque bem-sucedido com prompts longos e alegando autoridade, interesses apenas acadêmicos, ou falando para incorporar uma nova personalidade.
 
 Um exemplo interessante de se destacar, foi o ataque simulando um "jogo" onde o modelo teria que responder com duas personalidades, como mostra a imagem abaixo:
-![Print 1 do notebook aula 2](./images/aula_2/Print 1 do notebook aula 2.png)
+![Print 1 do notebook aula 2](./images/aula_2/Print_1_notebook_aula_2.png)
 
 Em português, o ataque não foi bem-sucedido, como mostra a resposta abaixo:
 
