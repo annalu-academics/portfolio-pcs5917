@@ -30,11 +30,11 @@ Um exemplo interessante de se destacar, foi o ataque simulando um "jogo" onde o 
 
 Em português, o ataque não foi bem-sucedido, como mostra a resposta abaixo:
 
-![Print 2 do notebook aula 2](./images/aula_2/Print 2 do notebook aula 2.png)
+![Print 2 do notebook aula 2](./images/aula_2/Print_2_notebook_aula_2.png)
 
 Porém, ao executar o mesmo ataque em inglês, o ataque obteve sucesso, como mostra a imagem a seguir:
 
-![Print 3 do notebook aula 2](./images/aula_2/Print 3 do notebook aula 2.png)
+![Print 3 do notebook aula 2](./images/aula_2/Print_3_notebook_aula_2.png)
 
 Além de ter sido extremamente agressivo e grosseira, ele deu instruções de como fazer um veneno. O resultado foi contra o que era esperado, de ataques em português serem mais bem-sucedidos que em inglês no geral. A hipótese para isso é que foi apenas um ataque isolado e não vários para obter uma porcentagem total de sucesso entre ataques em português e inglês.
 
