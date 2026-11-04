@@ -91,6 +91,13 @@ Em "vulnerable" encontra-se o resultado de em quantos prompts o modelo se mostro
 
 ## Aula 5: ataques adversariais contra sistemas de IA (parte 2) - Caixa opaca
 
+## Aula 6: avaliação de ataques e uso de LLMs como juiz
+
+A atividade de LLMs como juízes reuniu os ataques feitos nas aulas 2 e 4 para fazer a avaliação de sucesso dos ataques. Para isso foram feitos protocolos tanto para a avaliação humana, quanto para a avaliação com LLMs. Os resultados foram consolidados nos seguintes documentos: 
+- neste [relatório]()
+- neste [notebook de desenvolvimento]()
+- nestas [tabelas]() com os resultados obtidos
+
 # O que é este Repositório?
 
 ## 1. Objetivo do Portfólio
