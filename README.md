@@ -95,7 +95,7 @@ Em "vulnerable" encontra-se o resultado de em quantos prompts o modelo se mostro
 
 A atividade de LLMs como juízes reuniu os ataques feitos nas aulas 2 e 4 para fazer a avaliação de sucesso dos ataques. Para isso foram feitos protocolos tanto para a avaliação humana, quanto para a avaliação com LLMs. Os resultados foram consolidados nos seguintes documentos: 
 - neste [relatório](https://github.com/annalu-academics/portfolio-pcs5917/blob/2746ad02bd6ad5f68e8d8c97c9c1e65f12312edf/documentos/Aula%2006%20Relatorio%20-%20LLM_como_Juiz.pdf)
-- neste [notebook de desenvolvimento]()
+- neste [notebook de desenvolvimento](https://github.com/annalu-academics/portfolio-pcs5917/blob/afa77f15e1a007c145ec5c7b75af0e1100f33ed1/notebooks/aula_06_llms_como_juizes.ipynb)
 - nestas [tabelas](https://github.com/annalu-academics/portfolio-pcs5917/tree/ba071123579d64563166e9f2c65489a39c824378/tabelas/aula_06) com os resultados obtidos
 
 # O que é este Repositório?
