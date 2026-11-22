@@ -63,7 +63,7 @@ Primeiramente foi feita uma análise exploratória (EDA) e extração de atribut
 * A normalização CMVN elimina a discriminação pela média estática dos atributos.
 * Os atributos com maior tamanho de efeito ($d$ de Cohen) concentram-se nas **derivadas de 1ª ordem (Deltas)** e nos **MFCCs intermediários (MFCC 2 a 6)** nos primeiros quadros de áudio, como mostra a imagem abaixo.
 
-![EDA]()
+![EDA](images/aula_3/eda_aula_3.png)
 
 Depois, segui-se para a implementação dos modelos:
 * **Baseline — XGBoost:**
@@ -84,7 +84,7 @@ A avaliação dos modelos utilizou a métrica oficial para sistema individual de
 
 A figura abaixo também mostra a matriz de confusão e a curva DET para o XGBoost (não foi possível gerar estas avaliações para a LCNN).
 
-![matriz confusão e DET XGBoost]()
+![matriz confusão e DET XGBoost](images/aula_3/eval_xgboost_aula_3.png)
 
 **Conclusão:** A LCNN apresentou uma redução relativa no EER de ~26% em relação ao baseline. Porém, é importante observar que o baseline rodou em muito menos tempo e atingiu resultados bastante competitivos.
 
