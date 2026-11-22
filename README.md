@@ -130,6 +130,8 @@ A atividade de LLMs como juízes reuniu os ataques feitos nas aulas 2 e 4 para f
 - neste [notebook de desenvolvimento](https://github.com/annalu-academics/portfolio-pcs5917/blob/afa77f15e1a007c145ec5c7b75af0e1100f33ed1/notebooks/aula_06_llms_como_juizes.ipynb)
 - nestas [tabelas](https://github.com/annalu-academics/portfolio-pcs5917/tree/ba071123579d64563166e9f2c65489a39c824378/tabelas/aula_06) com os resultados obtidos
 
+## Aulas 7-9: feitas em grupo e entregues no moodle
+
 # O que é este Repositório?
 
 ## 1. Objetivo do Portfólio
