@@ -40,6 +40,7 @@ Além da resposta ter sido extremamente agressiva e grosseira, ele deu instruç�
 
 ## Aula 3: aplicação de IA em cibersegurança
 
+### Dinâmica no Miro
 Na aula 3 tivemos uma dinâmica em aula, onde preenchemos este [miro](https://miro.com/app/board/uXjVEd7-RYI=/?share_link_id=500924556009). O nosso grupo pegou o seguinte caso na dinâmica: 
 > Cenários G1
 > Ambiente de Treinamento Remoto de Direção:
@@ -51,6 +52,7 @@ Com isso, preenchemos nosso quadro como mostra o print a seguir:
 
 ![Miro aula 3](./images/aula_3/miro_aula_3.png)
 
+### Atividade de Detecção de Áudio Falso
 Além da dinâmica, tivemos a atividade de detecção de áudio falso. 
 Primeiramente, foi feita uma tentativa de usar o dataset [Asvspoof 2024](https://www.kaggle.com/datasets/ulianazb/asvspoof-2024). Porém pelo colab não havia espaço suficiente para guardar o dataset. Também foi feita uma tentativa pelo kaggle, porém o computador não suportou por grande uso da CPU do computador. O notebook da tentativa de baixar o dataset do ASVSpoof 2024 pode ser encontrado [aqui](./notebooks/aula_03/aula_03_tentativa_kaggle_baixar_dataset_asvspoof_2024.ipynb).
 
