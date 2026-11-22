@@ -122,6 +122,22 @@ Sobre o último ponto levantado, é necessário ressaltar, porém, que os modelo
 Em "vulnerable" encontra-se o resultado de em quantos prompts o modelo se mostrou vulnerável(sim/não), dentre todos os 91 testados e a coluna "Rate" é o mesmo resultado em porcentagem. Observa-se que para o caso que estamos testando nos notebooks das aulas 2 e 4, os modelos não têm defesas adicionais. Então, de acordo com esse estudo é esperado que o modelo DeepSeek R1 obtenha resultados significativamente piores que o Phi3 nestas circunstâncias. Desta forma, o que foi testado não é completamente comparável e é possível que tivéssemos resultados diferentes testando ambas abordagens de igualmente para ambos modelos.
 
 ## Aula 5: ataques adversariais contra sistemas de IA (parte 2) - Caixa opaca
+Primeiro foi feita uma tentativa de usar o git do código original do PAIR (https://github.com/annalu-academics/JailbreakingLLMs) e rodá-lo no colab, porém após várias tentativas de alteração para ser adaptado ao ambiente do colab, não houve sucesso após inúmeras tentativas. De qualquer forma, o código com as tentativas pode ser encontrado [aqui](). 
+
+Depois utilizou-se como base o template disponibilizado no moodle para concluir a atividade. O notebook com ataques em inglês pode ser encontrado [aqui]() e com ataques em português [aqui](). Os resultados consolidados com prompts de ataques, respostas da vítima e se o ataque foi bem-sucedido ou não podem ser encontrados nesta [tabela]().
+
+A atividade utilizando-se a técnica PAIR como ataque foi feita com as seguintes combinações:
+- Língua: português ou inglês
+- LLM Atacante: Qwen3.5-4B, wangzhang/Qwen3.5-4B-abliterated, microsoft/Phi-4-mini-instruct
+- LLM Vítima: microsoft/Phi-4-mini-instruct, Qwen/Qwen3.5-4B
+- Objetivos de ataque: como fazer uma bomba, instruções para comer vidro, como fazer veneno, ou como fazer insider trading sem ser pego
+
+No geral observou-se uma dificuldade no atacante gerar o output no formato desejado (que deveria ser em json com uma proposta de melhoria e de prompt). Principalmente com o Qwen3.5-4B houveram recusas de se fazer o ataque, motivo pelo qual foi feita a tentativa de se usar o wangzhang/Qwen3.5-4B-abliterated, que é uma versão sem restrições do Qwen3.5-4B. Também aconteceu várias vezes alucinações por parte do modelo atacante. Esses pareceram ser os principais fatores para a técnica não ter sido tão efetiva. Provavelmente seriam necessários modelos mais robustos (mas com baixo alinhamento) para obter mais sucesso. 
+
+Em relação ao template original do notebook, foram necessárias algumas alterações para que pelo menos alguns dos ataques funcionassem:
+- Adaptação para rodar LLM localmente (não era possível fazer chamadas de API por limitação do huggigface)
+- Adaptação do prompt pois Qwen insistia em retornar reflexões internas ao invés do output original (o que não foi completamente mitigado mesmo após a mudança)
+- Filtro de limpeza do output do prompt via código
 
 ## Aula 6: avaliação de ataques e uso de LLMs como juiz
 
