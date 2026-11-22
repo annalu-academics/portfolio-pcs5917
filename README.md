@@ -57,7 +57,37 @@ Primeiramente, foi feita uma tentativa de usar o dataset [Asvspoof 2024](https:/
 Assim, foi escolhido o mesmo dataset do [artigo](https://ieeexplore.ieee.org/document/9358099) que foi designada a leitura para a aula 3, o dataset [ASVSpoof 2019](https://www.kaggle.com/datasets/awsaf49/asvpoof-2019-dataset). Desta forma, foi feito um dataset, já separado entre treino teste e com um breve pré-processamento de truncamento do áudio para 5s/padding para áudios com duração menor que esse tempo. O notebook onde foi criado esse dataset pode ser encontrado [aqui](./notebooks/aula_03/dataset_ASVSpoof_2019.ipynb). Para simplificar a tarefa de detecção para a atividade, foi apenas selecionado o áudio falso do tipo logical access (LA), que após o balanceamento do dataset ficou com um total de 4128 exemplos para o treino e 1032 exemplos de áudio para o teste. 
 
 
-Com o dataset criado, seguiu-se para o desenvolvimento do modelo de detecção de áudio falso.
+Com o dataset criado, seguiu-se para o [segundo notebook]():
+
+Primeiramente foi feita uma análise exploratória (EDA) e extração de atributos. A partir dos áudios do dataset, foram extraídas matrizes espectro-temporais e a análise revelou que:
+* A normalização CMVN elimina a discriminação pela média estática dos atributos.
+* Os atributos com maior tamanho de efeito ($d$ de Cohen) concentram-se nas **derivadas de 1ª ordem (Deltas)** e nos **MFCCs intermediários (MFCC 2 a 6)** nos primeiros quadros de áudio, como mostra a imagem abaixo.
+
+![EDA]()
+
+Depois, segui-se para a implementação dos modelos:
+* **Baseline — XGBoost:**
+  Para estabelecer um benchmark de aprendizado tradicional, a matriz 2D foi resumida com estatísticas de agregação básicas (média, desvio padrão, mínimo e máximo), gerando um vetor plano para cada amostra.
+
+* **Rede Neural — LCNN (Light CNN):**
+  Implementada em PyTorch com ativação **Max-Feature-Map (MFM)**, baseada na arquitetura campeã entre sistemas individuais da equipe **T45** no ASVspoof 2019 ([Lavrentyeva et al., 2019](https://arxiv.org/abs/1904.05576)). A LCNN foi escolhida por usar convoluções 2D diretamente sobre a matriz de features e utilizar a competição entre pares de filtros do MFM para diminuir o efeito de ruídos e artefatos.
+  É importante observar que durante o treinamento (feito em CPU), o cluster parou o processamento. Desta forma, o LCNN foi encerrado na **11ª época**, mas o planejado era rodar 15 épocas. Apesar disso, o modelo demonstrou convergência rápida, atingindo seu menor *Test Loss* (0,1046) e estabilizando os resultados de validação sem necessidade de reexecução.
+
+**Resultados e Comparação:**
+
+A avaliação dos modelos utilizou a métrica oficial para sistema individual de **Equal Error Rate (EER)**:
+
+| Modelo | Abordagem | Acurácia | EER (%) | Destaque |
+| :--- | :--- | :---: | :---: | :--- |
+| **XGBoost** | Baseline | 95,64% | 4,46% |
+| **LCNN** | Deep Learning 2D + MFM | **98,13%** | **3,29%** | **~26% de redução relativa no EER** |
+
+A figura abaixo também mostra a matriz de confusão e a curva DET para o XGBoost (não foi possível gerar estas avaliações para a LCNN).
+
+![matriz confusão e DET XGBoost]()
+
+**Conclusão:** A LCNN apresentou uma redução relativa no EER de ~26% em relação ao baseline. Porém, é importante observar que o baseline rodou em muito menos tempo e atingiu resultados bastante competitivos.
+
 
 ## Aula 4: ataques adversariais contra sistemas de IA (parte 1) - Caixa transparente
 
