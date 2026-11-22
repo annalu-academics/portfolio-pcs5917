@@ -59,7 +59,7 @@ Primeiramente, foi feita uma tentativa de usar o dataset [Asvspoof 2024](https:/
 Assim, foi escolhido o mesmo dataset do [artigo](https://ieeexplore.ieee.org/document/9358099) que foi designada a leitura para a aula 3, o dataset [ASVSpoof 2019](https://www.kaggle.com/datasets/awsaf49/asvpoof-2019-dataset). Desta forma, foi feito um dataset, já separado entre treino teste e com um breve pré-processamento de truncamento do áudio para 5s/padding para áudios com duração menor que esse tempo. O notebook onde foi criado esse dataset pode ser encontrado [aqui](./notebooks/aula_03/dataset_ASVSpoof_2019.ipynb). Para simplificar a tarefa de detecção para a atividade, foi apenas selecionado o áudio falso do tipo logical access (LA), que após o balanceamento do dataset ficou com um total de 4128 exemplos para o treino e 1032 exemplos de áudio para o teste. 
 
 
-Com o dataset criado, seguiu-se para o [segundo notebook]():
+Com o dataset criado, seguiu-se para o [segundo notebook](notebooks/aula_03/detecção_de_audio_falso.ipynb):
 
 Primeiramente foi feita uma análise exploratória (EDA) e extração de atributos. A partir dos áudios do dataset, foram extraídas matrizes espectro-temporais e a análise revelou que:
 * A normalização CMVN elimina a discriminação pela média estática dos atributos.
