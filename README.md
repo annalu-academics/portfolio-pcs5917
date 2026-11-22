@@ -124,7 +124,7 @@ Em "vulnerable" encontra-se o resultado de em quantos prompts o modelo se mostro
 ## Aula 5: ataques adversariais contra sistemas de IA (parte 2) - Caixa opaca
 Primeiro foi feita uma tentativa de usar o git do código original do PAIR (https://github.com/annalu-academics/JailbreakingLLMs) e rodá-lo no colab, porém após várias tentativas de alteração para ser adaptado ao ambiente do colab, não houve sucesso após inúmeras tentativas. De qualquer forma, o código com as tentativas pode ser encontrado [aqui](). 
 
-Depois utilizou-se como base o template disponibilizado no moodle para concluir a atividade. O notebook com ataques em inglês pode ser encontrado [aqui]() e com ataques em português [aqui](). Os resultados consolidados com prompts de ataques, respostas da vítima e se o ataque foi bem-sucedido ou não podem ser encontrados nesta [tabela](tabelas/aula_05_resultados _prompts_atividade_PAIR.csv).
+Depois utilizou-se como base o template disponibilizado no moodle para concluir a atividade. O notebook com ataques em inglês pode ser encontrado [aqui](notebooks/aula_05/Red_Team_PAIR_EN.ipynb) e com ataques em português [aqui](notebooks/aula_05/Red_Team_PAIR_PT.ipynb). Os resultados consolidados com prompts de ataques, respostas da vítima e se o ataque foi bem-sucedido ou não podem ser encontrados nesta [tabela](tabelas/aula_05_resultados _prompts_atividade_PAIR.csv).
 
 A atividade utilizando-se a técnica PAIR como ataque foi feita com as seguintes combinações:
 - Língua: português ou inglês
